@@ -824,9 +824,7 @@ function App() {
           <p className="muted">Track Tamil literature, stock movements, low-stock warnings and packing preparation.</p>
         </div>
         <div className="header-actions">
-          <span className="mode-pill">{supabaseEnabled ? 'Shared Supabase mode' : 'Local demo mode'}</span>
           {loadingRemote && <span className="mode-pill">Syncing…</span>}
-          <button className="ghost" onClick={hardReset}><RotateCcw size={16} /> Reset demo data</button>
           {supabaseEnabled && <button className="ghost" onClick={signOut}>Sign out</button>}
         </div>
       </header>
